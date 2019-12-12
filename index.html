@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="conteiner">
+      <div class="row">
+        <div class="col-lg-12">
+          <div id="registration-block">
+            <h1>Please sing up</h1>
+            <form action="" name="registration">
+              <div class="float-container">
+                <label for="floatField1">First name</label>
+                <input type="text" id="floatField1" data-placeholder="" onchange="checkValidInput(0)">
+              </div>
+              <small class="warning">Name must contain only english letters</small>
+              <div class="float-container">
+                <label for="floatField2">Last name</label>
+                <input type="text" id="floatField2" data-placeholder="" onchange="checkValidInput(1)">
+              </div>
+              <small class="warning">Name must contain only english letters</small>
+              <div class="float-container">
+                <label for="floatField3">Email address</label>
+                <input type="email" id="floatField3" data-placeholder="" onchange="checkValidInput(2)">
+              </div>
+              <small class="warning">Email must conform to the format abc@mail.com</small>
+              <div class="float-container">
+                <label for="floatField4">Password</label>
+                <input type="password" id="floatField4" data-placeholder="" onchange="checkValidInput(3)">
+              </div>
+              <small class="warning">Password must be at least 8 characters</small>
+            </form>
+            <button type="submit" class="btn btn-primary" id="singInBtn">Sing up</button>
+            <a href="#" id="singInSrc">Sing in now</a>
+          </div>
+          <div id="sing-in-block">
+            <form action="" name="singIn">
+              <h1>Please sing in</h1>
+              <div class="float-container">
+                <label for="floatField5">Email address</label>
+                <input type="email" id="floatField5" data-placeholder="">
+              </div>
+              <div class="float-container">
+                <label for="floatField6">Password</label>
+                <input type="password" id="floatField6" data-placeholder="">
+              </div>
+              <small class="warning">Incorect login or password</small>
+            </form>
+            <button type="submit" class="btn btn-success" id="singUpBtn">Sing up</button>
+            <a href="#" id="singUpSrc">Sing up now</a>
+          </div>
+          <div id="user-block">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVTUKf46N0lNmZ0o8H2S2f9jzpOYIDWqBXhrL1WMyTR4sUxUDv&s"
+              alt="">
+            <div class="user-name">
+              <h2 class="name"></h2>
+              <h2 class="name"></h2>
+            </div>
+            <p id="user-email"></p>
+            <p>Designer & Web Developing </p>
+            <button type="submit" class="btn btn-success" id="singUpBtn2">Sing up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
